@@ -1,6 +1,7 @@
 <?php
 namespace Eminiarts\NovaPermissions;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 use Eminiarts\NovaPermissions\Nova\Role;
@@ -74,5 +75,9 @@ class NovaPermissions extends Tool
         $this->roleResource = $roleResource;
 
         return $this;
+    }
+
+    public function menu(Request $request){
+
     }
 }
